@@ -8,26 +8,24 @@
 
 html{
     font-size: 10px;
-    font-family: 'poppins', 'Times New Roman', Times, serif;
+    font-family: 'Poppins', 'Times New Roman', Times, serif ;
     scroll-behavior: smooth;
 }
 
 a{
     text-decoration: none;
 }
-
 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-} 
-
+}
 p {
- font-size: 1.4rem;
- margin-top: 5px;
- line-height: 2.5rem;
- font-weight: 200;
- letter-spacing: 0.05rem;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.05rem;
 }
 
 .container{
@@ -48,7 +46,9 @@ p {
     text-align: center;
 }
 
-/*seção de apresentação*/
+
+
+/* Seção de apresentação */
 
 #presentation{
     background-image: url(./background.jpeg);
@@ -57,7 +57,6 @@ p {
     position: relative;
     z-index: 1;
 }
-
 #presentation h1{
     display: block;
     width: fit-content;
@@ -86,9 +85,10 @@ p {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    margin-top: 20px; 
+    margin-top: 20px;
     transition: .5s ease;
-    transition-property: background-color, color;   
+    transition-property: background-color, color;
+
 }
 #presentation .cta:hover{
     color: white;
@@ -117,16 +117,16 @@ p {
 #presentation::after{
     content: '';
     position: absolute;
-    left: 0;
+    left:0;
     top: 0;
-    height: 100%;
+    height:100%;
     width: 100%;
-    background-color: black;
+    background-color:black;
     opacity: 0.5;
     z-index: -1;
 }
 
-/*seção de Portifólio*/
+/* Seção de Portifólio */
 
 #portfolio .portfolio{
     flex-direction: column;
@@ -137,14 +137,14 @@ p {
 #portfolio .portfolio-header h1{
     margin-bottom: 50px;
 }
-#portfolio .all-projects{
+#portfolio .all-projects {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 #portfolio .project-item{
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -154,7 +154,7 @@ p {
     border-radius: 10px;
 }
 
-#portfolio .project-info{
+#portfolio .project-info {
     padding: 30px;
     flex-basis: 50%;
     height: 100%;
@@ -163,7 +163,7 @@ p {
     justify-content: center;
     flex-direction: column;
     background-image: linear-gradient(60deg, #5a10b5 0%, #002349 100%);
-    color:white;
+    color: white;
 }
 
 #portfolio .project-info h1{
@@ -184,11 +184,11 @@ p {
     position: relative;
 }
 
-#portfolio .project-img::after {
+#portfolio .project-img:after {
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
+    top:0;
     height: 100%;
     width: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -201,9 +201,7 @@ p {
     transform: scale(1.1);
 }
 
-
-
-/* keyframes */
+/* Keyframes */
 
 @keyframes text_reveal{
     100%{
@@ -219,16 +217,16 @@ p {
 
 @keyframes text_reveal_box{
     50%{
-        width: 100%;
-        left: 0;
+        width:100%;
+        left:0;
     }
     100%{
         width: 0;
-        left: 100%;
+        left:100%
     }
 }
 
-/*Media Query*/
+/* Media Query */
 @media only screen and (min-width: 768px) {
     #portfolio .project-item {
         flex-direction: row;
@@ -237,13 +235,15 @@ p {
         width: 100%;
         border-radius: 0;
     }
-    #portfolio .all-projects .project-info {
-      height: 100%;
+    #portfolio .all-projects .project-info{
+        height: 100%
     }
-    #portfolio .all-projects .project-img {
-        height: 100%;
-      }
-      #portfolio .project-item:nth-child(even) {
+    #portfolio .all-projects .project-img{
+        height: 100%
+    }
+    #portfolio .project-item:nth-child(even) {
         flex-direction: row-reverse;
-      }
+    }
+
+
 }
